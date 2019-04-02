@@ -1,8 +1,7 @@
-import { join } from 'path';
 import { readdirSync } from 'fs';
 
-export function getSolutions() {
-    const solutions = readdirSync(join(__dirname, 'public', 'solutions'));
+export function getSolutions(dir) {
+    const solutions = readdirSync(dir);
     return solutions.map(solution => {
         return {
             date: solution.replace(/.html/g, ''),

@@ -9,7 +9,7 @@ import { getSolutions } from './utilities/solutions';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-const solutions = getSolutions();
+const solutions = getSolutions(join(__dirname, 'public', 'solutions'));
 
 app.use(compression());
 if (process.env.NODE_ENV === 'production') {
