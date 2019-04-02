@@ -1,0 +1,28 @@
+{
+  "name": "unitn-statistica-solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "compile-ts": "tsc",
+    "copy-to-dist": "copyfiles -u 1 src/**/*.html src/**/*.pug src/**/*.css src/**/*.json src/**/*.js src/**/*.png dist/",
+    "build": "npm run compile-ts && npm run copy-to-dist"
+  },
+  "author": "Eugenio Vinicio Berretta",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/express": "^4.16.1",
+    "@types/helmet": "0.0.43",
+    "@types/morgan": "^1.7.35",
+    "copyfiles": "^2.1.0",
+    "typescript": "^3.4.1"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
+  }
+}

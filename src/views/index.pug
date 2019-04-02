@@ -1,0 +1,56 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+    link(href='index.css', rel='stylesheet')
+    title Unitn Statistica Solutions
+  body
+    nav
+      .container
+        .nav-wrapper
+          a.brand-logo.center(href='index.html') Ago Solutions
+    main
+      .parallax-container
+        .parallax
+          img(src='./ago.png')
+      .section.white
+        .row.container
+          .col.s12.m10.offset-m1
+            h2.header.red-text.text-accent-2 Solutions
+            p.grey-text.text-darken-3.lighten-3
+              | Soluzioni ufficiali del corso di statistica. Le
+              | soluzioni non sono pubblicate prima delle consegne degli esercizi, servono solo per capire se il
+              | procedimento che si ha usato è corretto.
+            h4.light Seleziona la data
+            ul.collection.with-header
+              li.collection-header
+                h4 Soluzioni
+              each solution in solutions
+                li.collection-item
+                  div
+                    span Esercizio del #{solution.date}
+                    a.secondary-content(href= solution.link)
+                      i.material-icons visibility
+    footer.page-footer
+      .container
+        .row
+          .col.l6.s12
+            h5.white-text Unitn Statistica Solutions
+            p.grey-text.text-lighten-4
+              | Usa questo sito per vedere le soluzioni ufficiali degli esercizi
+              | di statistica.
+          .col.l4.offset-l2.s12
+            h5.white-text Links
+            ul
+              li
+                a.grey-text.text-lighten-3(href='https://unitn-statistica.herokuapp.com') unitn-statistica.herokuapp.com
+      .footer-copyright
+        .container
+          span © 2019 MIT License Copyright
+          a.grey-text.text-lighten-4.right(href='https://en.wikipedia.org/wiki/MIT_License')
+            | MIT
+            | License
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script(src='index.js')

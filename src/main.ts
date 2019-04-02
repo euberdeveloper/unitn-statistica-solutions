@@ -1,0 +1,31 @@
+import * as express from 'express';
+import * as compression from 'compression';
+import * as helmet from 'helmet';
+import * as morgan from 'morgan';
+import { join } from 'path';
+
+import * as solutions from './solutions.json';
+import { redirect } from './utilities/redirect';
+
+const app = express();
+const PORT = process.env.PORT || 8000;
+
+app.use(compression());
+if (process.env.NODE_ENV === 'production') {
+    app.use(redirect);
+}
+
+app.set('view engine', 'pug');
+app.set('views', join(__dirname, 'views'));
+app.use(express.static(join(__dirname, 'public')));
+
+app.use(helmet());
+app.use(morgan('dev'));
+
+app.get('/', (req, res) => {
+    res.render('index', { solutions });
+});
+
+app.listen(PORT, () => {
+    console.log('SERVER LISTENING ON PORT ', PORT);
+});
