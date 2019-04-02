@@ -23,7 +23,7 @@ app.use(express.static(join(__dirname, 'public')));
 app.use(helmet());
 app.use(morgan('dev'));
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
     res.render('index', { solutions });
 });
 
