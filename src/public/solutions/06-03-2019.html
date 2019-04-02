@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Soluzione per l&#39;esercizio del 2019-03-06DATA creato per mario.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Soluzione per l&#39;esercizio del 2019-03-06DATA creato per mario.rossi</h2>
+
+<p>Dato l&#39;insieme \(\Omega = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}\) e \(A, B, C, D \in \mathcal{P}(\Omega)\):</p>
+
+<p>\(A=\{4, 5\}\),</p>
+
+<p>\(B=\{2, 8\}\),</p>
+
+<p>\(C=\{10, 6, 4, 1, 2, 7\}\) e</p>
+
+<p>\(D = \{1, 4, 2, 10\}\) le seguenti affermazioni sono vere o false?</p>
+
+<p>Ricordiamo che:</p>
+
+<ul>
+<li>\(A^c =\Omega \setminus A\)</li>
+<li>\(A\bigtriangleup B = (A \setminus B) \cup (B \setminus A)\)</li>
+<li>Regole di De Morgan
+
+<ul>
+<li>\((A \cup B)^c = A^c \cap B^c\)</li>
+<li>\((A \cap B)^c = A^c \cup B^c\)</li>
+</ul></li>
+</ul>
+
+<h4>Quesiti e soluzioni</h4>
+
+<h4>1. \(((A \cup B)^c \cap D^c) \cap C^c \stackrel{?}{=} \Omega^c\)</h4>
+
+<p>Riscriviamo \(((A \cup B)^c \cap D^c) \cap C^c = \Omega^c \Leftrightarrow (A \cup B \cup D \cup C)^c = \emptyset\)</p>
+
+<p>Ora, \(E = A \cup B \cup D \cup C = \{1, 2, 4, 5, 6, 7, 8, 10\}\) da cui \(\Omega \setminus E = \{3, 9\}\).</p>
+
+<ul>
+<li>La risposta corretta risulta quindi essere: NA</li>
+<li>La risposta inserita é: NA</li>
+</ul>
+
+<h4>2. \(((A \cap B)^c \cup D^c) \cup C^c \stackrel{?}{=} \Omega\).</h4>
+
+<p>Nuovamente usando le regole di De Morgan \((A \cap B)^c \cup D^c) \cup C^c = (A \cap B \cap D \cap C)^c\)</p>
+
+<p>Nel nostro caso \(A \cap B \cap D \cap C=\) \(\emptyset\) per cui</p>
+
+<ul>
+<li>La risposta corretta risulta quindi essere sempre: NA</li>
+<li>La risposta inserita é: NA</li>
+</ul>
+
+<h4>3. \((B \cap C)^c\cup A^c \stackrel{?}{=} (A \cap B)^c\cup C^c\)</h4>
+
+<p>\((B \cap C)^c\cup A^c = (B \cap C \cap A)^c = (A \cap B \cap C)^c = (A \cap B)^c\cup C^c\)</p>
+
+<ul>
+<li>La risposta esatta è: NA</li>
+<li>La risposta inserita é: NA</li>
+</ul>
+
+<h4>4. \(((C^c \bigtriangleup D^c) \cap B)^c \stackrel{?}{=} \emptyset\)</h4>
+
+<p>Si osservi che \(C^c \setminus D^c = C^c \cap (D^c)^c = D \setminus C\) da cui \(C^c \bigtriangleup D^c = C \bigtriangleup D\)</p>
+
+<p>L&#39;intersezione è distributiva rispetto alla differenza simmetrica:
+\[
+\begin{aligned}
+(C^c \bigtriangleup D^c) \cap B & = (C \bigtriangleup D) \cap B \
+& = (C \cap B) \bigtriangleup (D \cap B)
+\end{aligned}
+\]</p>
+
+<p>In questo caso, \(C \cap B =\) {2} e \(D \cap B =\) {2} da cui \((C \cap B) \bigtriangleup (D \cap B)=\) \(\emptyset\)</p>
+
+<p>Prendendo infine il complementare la risposta corretta risulta essere: NA</p>
+
+<ul>
+<li>La risposta da voi inserita é: NA</li>
+</ul>
+
+<h4>5. \((A \bigtriangleup C \bigtriangleup D) \cap B = \emptyset\)</h4>
+
+<p>Come prima, distribuendo l&#39;intersezione.</p>
+
+<ul>
+<li>La risposta esatta è: NA</li>
+<li>La risposta inserita é: NA</li>
+</ul>
+
+</body>
+
+</html>

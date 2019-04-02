@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Soluzioni all&#39;esercizio del 2019-03-08 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h3>Soluzioni all&#39;esercizio del 2019-03-08 creato per luigi.rossi</h3>
+
+<p>Durante una sessione di un gioco da tavolo un giocatore deve tirare due dadi da dieci e tenere il valore più alto. Se tale valore è almeno 9 il giocatore non subirà danni.</p>
+
+<p>Rispondere alle seguenti domande.</p>
+
+<h4>1. Qual è la probabilitá che il giocatore non subirà danni?</h4>
+
+<p>Hint: Per l&#39;esperimento aleatorio del lancio di un dado si considera \(\Omega = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}\). Per il lancio di due dadi?</p>
+
+<p>Come suggerito si scriva prima lo spazio campionario relativo all&#39;esercizio: gli elementi \(\omega\) sono coppie del tipo \((n_1, n_2)\) con \(n_1, n_2 \in \{1, \dots, 10\}\) cioè
+\(\Omega = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\} \times \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\}\). \(\mathcal{A}=\mathcal{P}(\Omega)\).</p>
+
+<p>Il giocatore non subisce danni se si verifica l&#39;evento \(E=\)&ldquo;il valore più alto tra \(n_1\) e \(n_2\) è maggiore di 9&rdquo;, ossia chiamiamo \(E_i=\{n_i \geq 9\}\), \(i=1, 2\) allora \(E = E_1 \cup E_2\).</p>
+
+<p>Usando la <strong>regola 2</strong>
+\[
+P(E) = P(E_1 \cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2).
+\]</p>
+
+<p>Assumiamo che il dado sia regolare, si ha \(P(E_i)=0.2\). Per la probabilitá \(P(E_1 \cap E_2)\) consideriamo il plot</p>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-3"/></p>
+
+<p>e contiamo quanti elementi di \(\Omega\) cadono nell&#39;area data dall&#39;intersezione dei due eventi.</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita é: NA</li>
+</ul>
+
+<h4>2. Il primo dato è stato lanciato&hellip;</h4>
+
+<p>e il giocatore ha ottenuto 7. Qual è la probabilitá che il giocatore non subisca danni?</p>
+
+<p>\(n_1 = 7 < 9\) il giocatore non subisce danni se con il secondo tiro supera la soglia, per cui </p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita é: NA</li>
+</ul>
+
+<h4>3. E se potesse ritirare?</h4>
+
+<p>Se il giocatore ottiene lo stesso valore su entrambi i dadi acquista il diritto di tirare nuovamente i dadi. Qual è la probabilitá che ciò (ottenere lo stesso valore sui due dadi) avvenga?</p>
+
+<p>L&#39;evento in questione è \(E=\{(n_1, n_2) \in \Omega : n_1 = n_2\}\). Si tratta di contare i punti sulla diagonale nel plot precedente.</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita é: NA</li>
+</ul>
+
+</body>
+
+</html>

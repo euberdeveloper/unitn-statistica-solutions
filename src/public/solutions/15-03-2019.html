@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Testo dell&#39;esercizio del 2019-03-15 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h3>Testo dell&#39;esercizio del 2019-03-15 creato per luigi.rossi</h3>
+
+<p>In questo esperimento casuale ci sono 4 sacchetti di biglie colorate e un dado equilibrato a 4 facce.</p>
+
+<p>Si lancia il dado, in base al numero \(n\) ottenuto si pesca un baglia da \(n\) sacchetti.
+In tutti e quattro i sacchetti vi sono 8 biglie rosse &ldquo;R&rdquo; e 13 biglie nere &ldquo;N&rdquo;.</p>
+
+<h4>Soluzione</h4>
+
+<p>Osservazioni:</p>
+
+<ul>
+<li>vi sono due fasi in questo esperimento, prima il lancio del dado a 4 facce e in seguito l&#39;estrazione delle biglie colorate;</li>
+<li>il fatto che si peschi da \(n\) sacchetti diversi può essere pensato, equivalentemente, come estrazione con reinserimento da un unico sacchetto;</li>
+<li>nelle domande 1 e 2 viene chiesta la probabilità di un evento finale solo in termini di colori delle biglie, ma il numero delle biglie va tenuto in conto!</li>
+<li>la terza domanda è diversa dalle precedenti e bisogna lavorare un po&#39; di più.</li>
+</ul>
+
+<p>Gli esiti dell&#39;esperimento sono del tipo \((n, x_1, \dots, x_n)\) con \(n=1, 2, 3, 4\) e \(x_i=\) &ldquo;R&rdquo; oppure &ldquo;N&rdquo;, il colore della i-esima biglia estratta, ad esempio
+\[
+\begin{aligned}
+& (1, R), (1, N) \
+& (2, R, R), (2, R, N), (2, N, R), (2, N, N) \
+& \vdots
+\end{aligned}
+\]</p>
+
+<p>Il dado è equilibrato, ergo \(P(\text{esce n})=\frac{1}{4}\) per ogni \(n\) tra 1 e 4; metre la probabilità di estrarre una biglia rossa (resp. nera) è \(\frac{8}{21}=\) 0.3809524 (resp. \(\frac{13}{21}=\) 0.6190476).</p>
+
+<h4>1. Qual è la probabilità che alla fine si peschi esattamente N, R.</h4>
+
+<p>Posso pescare esattamente N, R se ottengo 2 al lancio del dado <strong>e</strong> poi pesco <strong>prima</strong> N e <strong>successivamente</strong> R.
+Infatti \(P((N, R) | n=1) = 0\) e lo stesso per ogni \(n\neq2\).</p>
+
+<p>\(P((2, N, R)) = P(N, R | n = 2) P(n = 2) = \frac{1}{4} \cdot 0.6190476 \cdot 0.3809524 = 0.0589569\).</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>2. Qual è la probabilità che alla fine si peschi esattamente R, N, R.</h4>
+
+<p>Simile al precedente.</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>3. Qual è la probabilità che si estraggano almeno 3 R.</h4>
+
+<p>Qui posso ottenere almeno 3 R in due modi:</p>
+
+<ul>
+<li>tiro il dado ottengo \(n = 3\) e poi pesco (R, R, R)</li>
+<li>tiro il dado, esce \(n = 4\) e poi pesco una almeno 3 R (l&#39;ordine qui non è importante!!)</li>
+</ul>
+
+<p>Sia \(A\) l&#39;evento &ldquo;alla fine ottengo almeno 3 R &rdquo; abbiamo che</p>
+
+<p>\(P(A) = P(\text{3 } R | n=3)P(n=3) + P(\text{almeno 3 } R | n=4)P(n=4)\).</p>
+
+<p>\(P(\text{3 } R | n=3) = (0.3809524)^3= 0.0552856\)</p>
+
+<p>Per quanto riguarda \(P(\text{almeno 3} R | n=4)\) abbiamo l&#39;unione di due eventi</p>
+
+<ol>
+<li>ottengo 4 R su 4 estrazioni, la cui probabilità è \(( 0.3809524 )^4\)</li>
+<li>ottengo 3 R su 4 estrazioni, la cui probabilità è \(4 \cdot ( 0.3809524 )^3 (0.6190476)\), ove 4 è il numero di permutazioni di \(\{R, R, R, N\}\)</li>
+</ol>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>

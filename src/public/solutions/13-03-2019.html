@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-13 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h3>Esercizio del 2019-03-13 creato per luigi.rossi</h3>
+
+<h4>Testo:</h4>
+
+<p>Aldo, Giovanni e Giacomo vogliono lanciare una freccia contro un bersaglio. La probabilità che Aldo lo colpisca è 0.47, la probabilità che Giovanni lo colpisca è 0.5, mentre la probabilità che Giacomo lo colpisca è  0.06. Dopo che i tre lanciano la freccia si constata che il bersaglio é stato centrato da un solo colpo.</p>
+
+<h4>Quesito 1:</h4>
+
+<p>Qual è la probabilità che il bersaglio sia stato colpito da Aldo?</p>
+
+<ul>
+<li>La soluzione si ottiene considerando l&#39;evento &ldquo;Aldo colpisce il bersaglio, Giovanni e Giacomo lo mancano&rdquo;. La propabilità del verificarsi di questo evento è data dal prodotto dei tre eventi indipendenti condizionato con la probabilità che il bersaglio sia colpito solo da uno dei tre, ovvero, definiti rispettivamente gli eventi
+
+<ul>
+<li>A: &ldquo;Aldo colpisce il bersaglio&rdquo;</li>
+<li>G: &ldquo;Giovanni colpisce il bersaglio&rdquo;</li>
+<li>g: &ldquo;Giacomo colpisce il bersaglio&rdquo;</li>
+</ul></li>
+</ul>
+
+<p>\[
+\begin{array}{rl}
+\Pr(A\cap G^c\cap g^c|1 \text{ centro }) =& \frac{\Pr(A\cap G^c\cap g^c)}{\Pr(A\cap G^c\cap g^c)+\Pr(A^c\cap G\cap g^c)+\Pr(A^c\cap G^c\cap g)}\
+=& \frac{\Pr(A)\Pr(G^c)\Pr(g^c)}{\Pr(A)\Pr(G^c)\Pr(g^c)+\Pr(A^c)\Pr(G)\Pr(g^c)+\Pr(A^c)\Pr(G^c)\Pr(g)}\
+=& \frac{0.47(1-0.06)(1-0.5)}{0.47(1-0.06)(1-0.5)+(1-0.47)0.06(1-0.5)+(1-0.47)(1-0.06)0.5}\
+=& NA\
+\end{array}
+\]
+(La risposta inserita è: NA)</p>
+
+<h4>Quesito 2:</h4>
+
+<p>Qual è la probabilità che sia stato colpito da Giovanni?</p>
+
+<ul>
+<li><p>La soluzione al quesito si ottiene in maniera analoga al punto 1.</p>
+
+<p>La risposta corretta risulta quindi essere: NA</p>
+
+<p>(La risposta inserita è: NA)</p></li>
+</ul>
+
+<h4>Quesito 3:</h4>
+
+<p>Qual è la probabilità che sia stato colpito da Giacomo?</p>
+
+<ul>
+<li><p>La soluzione al quesito si ottiene in maniera analoga al punto 1.</p>
+
+<p>La risposta corretta risulta quindi essere: NA</p>
+
+<p>(La risposta inserita è: NA)</p></li>
+</ul>
+
+</body>
+
+</html>
