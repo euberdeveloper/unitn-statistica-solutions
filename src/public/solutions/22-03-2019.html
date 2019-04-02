@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-22 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Esercizio del 2019-03-22 creato per luigi.rossi</h2>
+
+<h3>Soluzione</h3>
+
+<p>Siano \(N=3100\) e \(r=4\)</p>
+
+<h4>1.</h4>
+
+<p>Quanti sono i possibili sottoinsiemi di \(\{1, \dots, 3100\}\) con 4 elementi?</p>
+
+<p>Sono le combinazioni \(C_{N, r}\)</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>2.</h4>
+
+<p>Quanti sono i possibili sottoinsiemi di \(\{1, \dots, 3100\}\) con 4 elementi e tali che contengano almeno un numero pari?</p>
+
+<p>Vi sono \(\frac{N}{2}\) numeri dispari e le combinazioni \(C_{N/2, r}\) sono tutti i sottoinsiemi di \(r\) elementi che non contengono alcun numero pari.</p>
+
+<p>Per cui i possibili sottoinsiemi di \(\{1, \dots, 3100\}\) con 4 elementi e tali che contengano almeno un numero pari sono \(C_{N, r} - C_{N/2, r}\).</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>3.</h4>
+
+<p>Qualcuno estrae casualmente 4 numeri da \(\{1, \dots, 3100\}\) e mi dice che fra i numeri estratti c&#39;è almeno un numero divisibile per due.
+Qual è la probabilità che tutti e 4 i numeri estratti siano divisibili per due?</p>
+
+<p>Vi sono \(\frac{N}{2}\) numeri pari e le combinazioni \(C_{N/2, r}\) sono tutti i sottoinsiemi di \(r\) elementi che contengono solo numeri pari.
+Da cui
+\[
+\frac{C_{N/2, r}}{C_{N, r} - C_{N/2, r}}
+\]</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>

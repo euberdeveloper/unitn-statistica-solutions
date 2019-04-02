@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-26 creato per mario.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Esercizio del 2019-03-26 creato per mario.rossi</h2>
+
+<h3>Testo</h3>
+
+<p>Due bambini giocano a trasmettersi un messaggio attraverso uno strano apparecchio. Questo può inviare sequenze di 4 caratteri composte dalle sole lettere &ldquo;A&rdquo;, &ldquo;B&rdquo;, &ldquo;C&rdquo;.
+Uno dei due bambini trasmette una delle seguenti:</p>
+
+<ul>
+<li>AAAA, con probabilità 0.21</li>
+<li>BBBB, con probabilità 0.15</li>
+<li>CCCC, con probabilità 0.64</li>
+</ul>
+
+<p>Per ogni lettera, la probabilità che essa sia trasmessa correttamente è \(p=0.42\) e distorta in ciascuna delle altre due con la stessa
+probabilità.
+Ogni lettera è trasmessa in maniera indipendente dalla ogni altra.</p>
+
+<h3>Soluzione</h3>
+
+<h4>1.</h4>
+
+<p>Calcolare la probabilità che sia stata trasmessa la sequenza &ldquo;AAAA&rdquo;, avendo ricevuto la sequenza A, C, A, B.</p>
+
+<p>Si usa il teorema delle probabilità totali: chiamiamo \(E_1=\)&ldquo;AAAA&rdquo;, \(E_2=\)&ldquo;BBBB&rdquo;, \(E_3=\)&ldquo;CCCC&rdquo;, si ha che
+\[
+P(E_1 | A, C, A, B) = \frac{P(A, C, A, B | E_1) P(E_1)}{P(A, C, A, B | E_1) P(E_1) + P(A, C, A, B | E_2) P(E_2) + P(A, C, A, B | E_3) P(E_3)}.
+\]
+Ora prendiamo ad esempio \(P(A, C, A, B | E_1)\), se la sequeza trasmessa è &ldquo;AAAA&rdquo; abbiamo che le lettere trasmesse sono
+corretta, distorta, corretta, distorta e quindi in termini di probabilità abbiamo il prodotto di p, (1-p)/2, p, (1-p)/2.</p>
+
+<p>Allo stesso modo per le altre probabilità condizionate.</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>2.</h4>
+
+<p>Date le tre lettere &ldquo;A&rdquo;, &ldquo;B&rdquo;, &ldquo;C&rdquo; quante sono le possibili sequenze lunghe 5 caratteri?</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>

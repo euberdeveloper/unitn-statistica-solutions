@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-27 creato per nome.cognome</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Esercizio del 2019-03-27 creato per nome.cognome</h2>
+
+<h3>Testo</h3>
+
+<p>Si consideri lo spazio probabilizzato \((\mathbb{R},\mathbb{B}(\mathbb{R}))\) e sia data la seguente funzione di probabilità
+\[
+F(x) =
+1 - \exp{(-\lambda x)} \quad \text{se } x \geq 0\
+\]
+e \(F(x)=0\) altrimenti; \(\lambda = 4.766\).</p>
+
+<p><strong>N.B.</strong> Si usa il termine <em>funzione di Probabilità</em> come a pagina 49 delle note B del professor Agostinelli. \(F(x)\) è anche chiamata funzione di distribuzione o funzione di ripartizione.</p>
+
+<h3>Soluzione</h3>
+
+<p>Innanzitutto si osserva che \(F(x)\) è una funzione di distribuzione, infatti soddisfa</p>
+
+<ul>
+<li>non-decrescenza, infatti la derivata \(F'(x) = \lambda \exp{(-\lambda x)} > 0\) sempre;</li>
+<li>continua  da  destra</li>
+<li>nulla per \(x \to - \infty\) e tendente a uno per \(x \to \infty\).</li>
+</ul>
+
+<p>Attraverso \(P((a, b])=F(b)-F(a)\) possiamo attribuire una probabilità agli intervalli \((a, b]\).
+Non solo, come si vede nell&#39;esempio 6 (pag. 50, note B), grazie alla continuità di \(F\) tutti gli intervalli \((a, b], [a, b), [a, b], (a, b)\) hanno la stessa probabilità.</p>
+
+<h4>1.</h4>
+
+<p>Qual è la probabilità dell&#39;intervallo (0.011, 0.021]?</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>2.</h4>
+
+<p>Qual è la probabilità dell&#39;intervallo [-0.583, 0.583)?</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>3.</h4>
+
+<p>Qual è la probabilità dell&#39;evento \(A_1=(0.083, 0.125] \cup (0.19, 0.281]\)?</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<h4>4.</h4>
+
+<p>E quella di \(A_2=(0.083, 0.125] \cup (0.19, 0.281] \cup (0.011, 0.021]\)?</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-21 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Esercizio del 2019-03-21 creato per luigi.rossi</h2>
+
+<h3>Testo</h3>
+
+<p>Questo esperimento casuale consiste in una successione di prove. In ogni prova il giocatore A lancia 5 dadi ed il giocatore B ne lancia 2.
+Il gioco si ferma non appena uno dei giocatori ottiene un 5 su almeno un dado.</p>
+
+<h3>Soluzione</h3>
+
+<p>Innanzitutto calcoliamo:</p>
+
+<ul>
+<li>la probabilità che A ottenga un 5, \(pA\)</li>
+<li>la probabilità che B ottenga un 5, \(pB\)</li>
+</ul>
+
+<p>\(pA\) è uno, meno la probabilità che non lo ottenga e quest&#39;ultima è \((\frac{5}{6})^{5}\), \(pA = 1 - (\frac{5}{6})^{5}=0.5981224\).
+Allo stesso modo \(pB=1 - (\frac{5}{6})^{2}=0.3055556\).</p>
+
+<h4>1. Il gioco si ferma a causa di A e non di B</h4>
+
+<p>Sia \(E_1\) l&#39;evento in questione. Bisogna sommare i diversi casi in cui il gioco termina alla prima, alla seconda, all&#39;n&#39;esima prova e così via.</p>
+
+<p>Si osservi che la probabilità</p>
+
+<ul>
+<li>\(P(\text{A ottiene un successo al primo lancio e B no}) = P(\text{A ottiene un successo al primo lancio})P(\text{B non ottiene un successo al primo lancio})=pA(1-pB)\),</li>
+<li>\(P(\text{A ottiene un successo al secondo lancio e B no}) =P(\text{A non ottiene un successo al primo lancio}) P(\text{A ottiene un successo al secondo lancio})P(\text{B non ottiene un successo ne al primo ne secondo lancio})=(1-pA)pA(1-pB)^2\)</li>
+<li>etc.</li>
+</ul>
+
+<p>Di seguito &ldquo;A ottiene un successo all&#39;n-esimo lancio e B no&rdquo; sottointende che nessuno dei due ha avuto successo ai tiri precedenti, altrimenti il gioco si sarebbe già fermato.</p>
+
+<p>\[
+\begin{aligned}
+P(E_1) & = \sum_{n=1}^{\infty} P(\text{A ottiene un successo all'n-esimo lancio e B no})\
+& =\sum_{n=1}^{\infty} pA(1-pA)^{n - 1}(1-pB)^n \
+& = pA(1-pB)\left(\sum_{n=0}((1-pA)(1-pB))^n \right)
+\end{aligned}
+\]</p>
+
+<p>Ora si usi il suggerimento sulla serie geometrica poiché l&#39;argomento della serie \((1-pA)(1-pB)<1\), da cui \(P(E_1) = \frac{pA(1-pB)}{1 - (1-pA)(1-pB)}\)</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>2. Il gioco si ferma a causa di B e non di A</h4>
+
+<p>Analogamente si ottiene \(P(\text{ Il gioco si ferma a causa di B e non di A}) = frac{pB(1-pA)}{1 - (1-pA)(1-pB)}\)</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>3. Il gioco si ferma sia a causa di A e sia a causa di B.</h4>
+
+<p>Semplicemente uno meno la somma delle precedenti.</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>
