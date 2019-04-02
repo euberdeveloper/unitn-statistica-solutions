@@ -6,7 +6,8 @@
   "scripts": {
     "compile-ts": "tsc",
     "copy-to-dist": "copyfiles -u 1 src/**/*.html src/**/*.pug src/**/*.css src/**/*.json src/**/*.js src/**/*.png dist/",
-    "build": "npm run compile-ts && npm run copy-to-dist"
+    "build": "npm run compile-ts && npm run copy-to-dist",
+    "start": "node dist/main"
   },
   "author": "Eugenio Vinicio Berretta",
   "license": "MIT",

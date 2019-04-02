@@ -4,11 +4,12 @@ import * as helmet from 'helmet';
 import * as morgan from 'morgan';
 import { join } from 'path';
 
-import * as solutions from './solutions.json';
 import { redirect } from './utilities/redirect';
+import { getSolutions } from './utilities/solutions';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
+const solutions = getSolutions();
 
 app.use(compression());
 if (process.env.NODE_ENV === 'production') {

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-19 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Esercizio del 2019-03-19 creato per luigi.rossi</h2>
+
+<h3>Testo</h3>
+
+<p>In questo esperimento casuale vi sono due scatole (A e B) conteneti un diverso numero di palline bianche e nere.
+In particolare, la scatola A contiene 14 palline bianche e 18 palline nere, mentre la scatola B contiene  14 palline bianche e 13 palline nere.</p>
+
+<p>Si pesca da A una pallina e, senza guardarla, la si inserisce in B; poi si estrae una pallina da B.</p>
+
+<h3>Soluzione</h3>
+
+<p>Si tratta di un esercizio sulla probabilità condizionata.</p>
+
+<h4>1.  Qual è la probabilità che la seconda pallina estratta sia bianca?</h4>
+
+<p>Sia</p>
+
+<ul>
+<li>\(E=\) &ldquo;seconda pallina bianca&rdquo;</li>
+<li>\(H_1=\) &ldquo;prima pallina bianca&rdquo;</li>
+<li>\(H_2=\) &ldquo;prima pallina nera&rdquo;</li>
+</ul>
+
+<p>Per il teorema delle probabilità totali (teorema 8 pag. 57 note B)</p>
+
+<p>\(P(E) = P(E \cap (H_1 \cup H_2)) = P(E | H_1)P(H_1) + P(E| H_2)P(H_2)\). Ora,</p>
+
+<ul>
+<li>\(P(H_1)=\frac{14}{32}\)</li>
+<li>\(P(H_2)=\frac{18}{32}\)</li>
+<li>\(P(E | H_1)=\frac{14 + 1}{27 + 1}\)</li>
+<li><p>\(P(E | H_2)=\frac{14}{27 + 1}\)</p></li>
+<li><p>Risposta corretta: NA</p></li>
+<li><p>Risposta inserita: NA</p></li>
+</ul>
+
+<hr/>
+
+<h4>2. Sapendo che la seconda pallina estratta è bianca, qual è la probabilità che fosse bianca anche la prima pallina estratta?</h4>
+
+<p>Riutilizziamo la terminologia e i calcoli della domanda precedente e ricordiamo il teorema di Bayes (teorema 9 pag. 59 note B)</p>
+
+<p>\[
+P(A_i | B) = \frac{P(B | A_i) P(A_i)}{\sum_j P(B | A_j) P(A_j)}
+\]</p>
+
+<p>Nel nostro caso siamo interessati alla probabilità \(P(H_1 | E)\). Applicando il teorema si ottiene</p>
+
+<p>\[
+P((H_1 | E) = \frac{P(E | H_1) P(H_1)}{P(E)}
+\]</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>

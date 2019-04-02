@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Esercizio del 2019-03-18 creato per luigi.rossi</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Esercizio del 2019-03-18 creato per luigi.rossi</h2>
+
+<h3>Testo</h3>
+
+<p>Il capo della facoltà di Scienze deve istituire un comitato formato da 8 persone tra matematici e/o fisici per valutare un candidato per la cattedra di Meccanica Razionale.</p>
+
+<p>In facoltà ci sono 25 matematici e 12 fisici.</p>
+
+<h3>Soluzione</h3>
+
+<h4>1. Quanti sono i possibili comitati formati da 5 matematici e 3 fisici?</h4>
+
+<p>Ovviamente ogni elemento (persona) è distinto, invece l’ordine con cui compaiono nel comitato non è importante.
+Gli allineamenti a cui siamo interessati sono dunque combinazioni \(C_{n, r}\) e in particolare \(C_{25, 5}=53130\) e \(C_{12, 3}=220\).</p>
+
+<p>Visto che per ogni scelta dei matematici i fisici possono essere scelti in \(C_{12, 3}\) modi, il numero richiesto è dato dal prodotto \(C_{25, 5} \cdot C_{12, 3}\).</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>2. Qual è la probabilità di avere un comitato formato da 5 matematici e 3 fisici?</h4>
+
+<p>Basta calcolare la cardinalità di \(\Omega\), l&#39;insieme di tutti i possibli allineamenti \((p_1, \cdots, p_8)\) tali che \(p_i=\) &ldquo;matematico&rdquo; o &ldquo;fisico&rdquo;.</p>
+
+<p>\(\# \Omega = C_{37, 8}=\) 3.860802 &times; 10<sup>7</sup>.</p>
+
+<p>Dopodiché la probabilità desiderata è data da \(\frac{C_{25, 5} C_{12, 3}}{C_{37, 8}}\)</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+<hr/>
+
+<h4>3. Quanti sono i possibli comitati (sempre di 8 persone) tali che:</h4>
+
+<ol>
+<li>abbiano più matematici che fisici (n.b. in numero strettamente maggiore, non \(\geq\)) e</li>
+<li>contengano almeno un fisico?</li>
+</ol>
+
+<p>Bisogna considerare i comitati formati da:</p>
+
+<ul>
+<li>1 fisico e 7 matematici</li>
+<li>2 fisici e 6 matematici</li>
+<li>3 fisici e 5 matematici</li>
+</ul>
+
+<p>calcolare quanti sono e infine sommarli.</p>
+
+<ul>
+<li>Risposta corretta: NA</li>
+<li>Risposta inserita: NA</li>
+</ul>
+
+</body>
+
+</html>
