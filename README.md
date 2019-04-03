@@ -13,3 +13,40 @@ The site was made using a **NodeJS** server hosted in **Heroku**. **Materialize 
 ## A little preview
 
 ![Part of the site preview](https://github.com/euberdeveloper/unitn-statistica-solutions/blob/master/doc/soluzioni_screen.png)
+
+
+## Project structure:
+
+Made with [dree](https://github.com/euberdeveloper/dree)
+
+```
+unitn-statistica-solutions
+ ├─> doc
+ │   └── soluzioni_screen.png
+ ├── LICENSE
+ ├── package-lock.json
+ ├── package.json
+ ├── Procfile
+ ├── README.md
+ ├─> src
+ │   ├── main.ts
+ │   ├─> public
+ │   │   ├─> icons
+ │   │   │   └── favicon.ico
+ │   │   ├─> images
+ │   │   │   ├── ago.png
+ │   │   │   └── ago.webp
+ │   │   ├─> scripts
+ │   │   │   └── index.js
+ │   │   ├─> solutions
+ │   │   │   ├── 27-03-2019.html
+ │   │   │   └── 28-03-2019.html
+ │   │   └─> styles
+ │   │       └── index.css
+ │   ├─> utilities
+ │   │   ├── redirect.ts
+ │   │   └── solutions.ts
+ │   └─> views
+ │       └── index.pug
+ └── tsconfig.json
+```
