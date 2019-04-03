@@ -4,7 +4,7 @@ A site where official solutions of statistic course are published soon after the
 __link to the site:__ [unitn-statistica-solutions](https://unitn-statistica-solutions.herokuapp.com/)
 
 ## Project purpose:
-People were fed up with waiting for the statistic solutions. The teacher promised he would have published them soon after they were available, but that was a lie. By hacking his site I noticed they have been already saved but not published yet, so I downloaded them all and built this site wich allow you to see them right now. From time to time I will update the site with new solutions.
+People were fed up with waiting for the statistic solutions. The teacher promised he would have published them soon after they were available, but that was a lie. By hacking his site I noticed they have been already saved but not published yet, so I downloaded them all and developed this site wich allows you to see them right now. From time to time I will update the site with new solutions.
 <br/><br/>**Update:** Since now solutions are officially available, the site will be no more mantained.
 
 ## How it was made:
