@@ -7,7 +7,8 @@
     "compile-ts": "tsc",
     "copy-to-dist": "copyfiles -u 1 src/**/*.html src/**/*.pug src/**/*.css src/**/*.json src/**/*.js src/**/*.png src/**/*.ico src/**/*.webp dist/",
     "build": "npm run compile-ts && npm run copy-to-dist",
-    "start": "node dist/main"
+    "start": "node dist/main",
+    "project-tree": "dree parse ./ -d ./project-tree -n project.tree -o ./project-tree/options.json"
   },
   "author": "Eugenio Vinicio Berretta",
   "license": "MIT",
@@ -17,6 +18,7 @@
     "@types/helmet": "0.0.43",
     "@types/morgan": "^1.7.35",
     "copyfiles": "^2.1.0",
+    "dree": "^2.1.6",
     "typescript": "^3.4.1"
   },
   "dependencies": {
