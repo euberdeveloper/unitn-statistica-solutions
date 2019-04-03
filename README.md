@@ -17,6 +17,8 @@ The site was made using a **NodeJS** server hosted in **Heroku**. **Materialize 
 
 ## Project structure:
 
+Made with [dree](https://github.com/euberdeveloper/dree)
+
 ```
 unitn-statistica-solutions
  ├─> doc
@@ -48,5 +50,3 @@ unitn-statistica-solutions
  │       └── index.pug
  └── tsconfig.json
 ```
-
-Made with [dree](https://github.com/euberdeveloper/dree)
