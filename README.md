@@ -1,4 +1,4 @@
-# [unitn-statistica-solutions!](https://unitn-statistica-solutions.herokuapp.com/)
+# [unitn-statistica-solutions](https://unitn-statistica-solutions.herokuapp.com/)
 A site where official solutions of statistic course are published soon after they are available.
 
 __link to the site:__ [unitn-statistica-solutions!](https://unitn-statistica-solutions.herokuapp.com/)
