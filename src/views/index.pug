@@ -17,9 +17,9 @@ html(lang='en')
       .parallax-container
         .parallax
           picture
-            source(srcset='images/ago.webp', type='image/webp')
-            source(srcset='images/ago.png', type='image/png')
-            img(src='images/ago.png', alt='Agos')
+            source(srcset=`images/${image}.webp`, type='image/webp')
+            source(srcset=`images/${image}.png`, type='image/png')
+            img(src=`images/${image}.png`, alt=`${image}`)
       .section.white
         .row.container
           .col.s12.m10.offset-m1

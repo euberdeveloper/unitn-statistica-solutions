@@ -24,7 +24,8 @@ app.use(helmet());
 app.use(morgan('dev'));
 
 app.get('*', (req, res) => {
-    res.render('index', { solutions });
+    const image = req.query.image || 'unitn';
+    res.render('index', { solutions, image });
 });
 
 app.listen(PORT, () => {

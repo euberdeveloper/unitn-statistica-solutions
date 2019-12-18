@@ -8,24 +8,26 @@
     "copy-to-dist": "copyfiles -u 1 src/**/*.html src/**/*.pug src/**/*.css src/**/*.json src/**/*.js src/**/*.png src/**/*.ico src/**/*.webp dist/",
     "build": "npm run compile-ts && npm run copy-to-dist",
     "start": "node dist/main",
+    "serve": "npm run build && npm run start",
     "project-tree": "dree parse ./ -d ./project-tree -n project.tree -o ./project-tree/options.json"
   },
   "author": "Eugenio Vinicio Berretta",
   "license": "MIT",
   "devDependencies": {
-    "@types/compression": "0.0.36",
-    "@types/express": "^4.16.1",
-    "@types/helmet": "0.0.43",
-    "@types/morgan": "^1.7.35",
-    "copyfiles": "^2.1.0",
-    "dree": "^2.1.6",
-    "typescript": "^3.4.1"
+    "@types/compression": "^1.0.1",
+    "@types/express": "^4.17.2",
+    "@types/helmet": "0.0.45",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^12.12.21",
+    "copyfiles": "^2.1.1",
+    "dree": "^2.3.2",
+    "typescript": "^3.7.3"
   },
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.16.4",
-    "helmet": "^3.16.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
     "morgan": "^1.9.1",
-    "pug": "^2.0.3"
+    "pug": "^2.0.4"
   }
 }
